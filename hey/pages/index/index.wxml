@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="title">
+      <text class="userinfo-nickname">Hey Juice茶桔便(田子坊店)</text>
+      <text class="userinfo-categery">美食·茶餐厅</text>
+    </view>
+    <image class="userinfo-avatar" src="/images/logo.png" mode="scaleToFill"></image>
+  </view>
+  <view class="usermotto">
+    <view class="item-view" bindtap="openMap" hover-start-time="1" hover-class="className">
+      <image class="address-img" mode="scaleToFill" src="/images/address.png"></image>
+      <text class="address">上海市黄浦区泰康路220号(田子坊一号门旁)</text>
+      <image src="/images/open.png" class="item-open"></image>
+    </view>
+    <view class="item-view">
+      <image class="address-img" mode="scaleToFill" src="/images/time.png"></image>
+      <text class="time">8:00 - 23:00</text>
+    </view>
+    <view class="item-view" bindtap="call">
+      <image class="address-img" mode="scaleToFill" src="/images/phone.png"></image>
+      <text class="phone">021-64486832</text>
+      <image src="/images/open.png" class="item-open"></image>
+    </view>
+    <view class="item-view">
+      <image class="address-img" mode="scaleToFill" src="/images/gallery.png"></image>
+      <text class="photo">门店照片</text>
+    </view>
+    <scroll-view class="scroll-view" scroll-y="true">
+      <image mode="aspectFit" bindtap="openImg2" class="scroll-view-item width1" src="/images/img2.jpg"></image>
+      <image mode="aspectFit" bindtap="openImg3" class="scroll-view-item width2" src="/images/img3.jpg"></image>
+      <image mode="aspectFit" bindtap="openImg1" class="scroll-view-item width1" src="/images/img1.jpg"></image>      
+      <image mode="aspectFit" bindtap="openImg4" class="scroll-view-item width2" src="/images/img4.jpg"></image>
+    </scroll-view>
+  </view>
+</view>
